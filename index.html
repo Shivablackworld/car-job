@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <!-- Header Section -->
+<header class="flex justify-between items-center py-4 px-6 bg-white">
+    <!-- Logo Section -->
+    <div class="flex items-center">
+        <img src="https://www.youtube.com/s/desktop/0421146d/img/favicon_144x144.png" alt="YouTube Logo" class="h-8 w-8">
+        <span class="text-lg font-bold ml-2">YouTube</span>
+    </div>
+
+    <!-- Search Section -->
+    <div class="flex items-center">
+        <input type="search" placeholder="Search" class="pl-10 py-2 w-full text-sm text-gray-700 bg-gray-100 rounded-md">
+        <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-md ml-2">Search</button>
+    </div>
+
+    <!-- Navigation Section -->
+    <div class="flex items-center">
+        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-md">Sign in</button>
+        <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-md ml-2">Create</button>
+        <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-md ml-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-md ml-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11.158L16.158 9.95L14.05 11.158V14.158A2.032 2.032 0 0115 15.158z" />
+            </svg>
+        </button>
+    </div>
+</header>
+
+<!-- Left Sidebar Section -->
+<aside class="fixed top-0 left-0 w-64 h-screen bg-white p-4 border-r border-gray-200">
+    <!-- Logo Section -->
+    <div class="mb-4">
+        <img src="https://www.youtube.com/s/desktop/0421146d/img/favicon_144x144.png" alt="YouTube Logo" class="h-8 w-8">
+    </div>
+
+    <!-- Navigation Section -->
+    <nav class="mb-4">
+        <ul>
+            <li class="py-2">
+                <a href="#" class="text-gray-600 hover:text-gray-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M3 12l9 9.01M9 21l-6.75-.69L3 12l2.25 2.25L9 21z" />
+                    </svg>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="py-2">
+                <a href="#" class="text-gray-600 hover:text-gray-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span>Trending</span>
+                </a>
+            </li>
+            <li class="py-2">
+                <a href="#" class="text-gray-600 hover:text-gray-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13.5M19.809 12.498l-6.604 6.604a1.5 1.5 0 01-2.121-.707l-4.7-4.7a1.5 1.5 0 013.151-2.121l4.7 4.7a1.5 1.5 0 012.121.707L19.809 12.498z" />
+                    </svg>
+                    <span>Subscriptions</span>
+                </a>
+            </li>
+            <li class="py-2">
+                <a href="#" class="text-gray-600 hover:text-gray-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5-3v9" />
+                    </svg>
+                    <span>Library</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Channel Section -->
+    <div class="mb-4">
+        <h2 class="text-lg font-bold">Channels</h2>
+        <ul>
+            <li class="py-2">
+                <a href="#" class="text-gray-600 hover:text-gray-900">
+                    <img src="https://via.placeholder.com/40x40" alt="Channel Avatar" class="h-10 w-10 rounded-full mr-2">
+                    <span>Channel 1</span>
+                </a>
+            </li>
+            <li class="py-2">
+                <a href="#" class="text-gray-600 hover:text-gray-900">
+                    <img src="https://via.placeholder.com/40x40" alt="Channel Avatar" class="h-10 w-10 rounded-full mr-2">
+                    <span>Channel 2</span>
+                </a>
+            </li>
+            
+</body>
+</html>
